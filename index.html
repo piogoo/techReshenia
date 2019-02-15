@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ТЕХНИЧЕСКИЕ РЕШЕНИЯ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header name="top" id="top">
+        <nav class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <div class="header__nav-block">
+                        <div class="logo"><img src="logo.png" alt="технические решения"></div>
+                    </div>
+                    <div class="header__nav-block">
+                        <ul class="header__menu">
+                            <li><a href="#top">Главная</a></li>
+                            <li><a href="#napravleniya">O Компании</a></li>
+                            <li><a href="#advantages">Наш Сервис</a></li>
+                            <li><a href="#Partners">Партнёры</a></li>
+                        </ul>
+                        <div class="menu-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="header__nav-blockk">
+                        <div class="phone">
+                            <span>8(8332) 555-55-55</span>
+                            <img src="img/phone.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__divider"></div>
+        </nav>
+
+        <div class="header__main">
+                <h1>Лучшие технические решения для бизнеса</h1>
+                <div class="mobile-logo"></div>
+                <div class="button" data-fancybox data-src="#m">
+                    <a href="#">Оставить заявку</a>
+                </div>
+               <a href="#napravleniya"><img src="img/arrow.png"></a>
+        </div>
+    </header>
+
+    <div class="modal" id="m">
+        <div class="modal__container">
+            <form class="form" id="form">
+              <h2>Обратная связь</h2>
+              <p>Введите cвои данные и мы Вам перезвоним!</p>
+                <input name="name" id="form_name"  placeholder="Ваше Имя">
+                <div class="display-error" style="display: none;"> </div>
+                <input name="email" type="email" placeholder="Email">
+                <input name="phone" id="form_phone" placeholder="Номер телефона">
+                <div class="phone-error"> </div>
+                <input type="submit" value="Оставить заявку" class="submit">
+            </form>
+            <div class="response__ajax" style="display: none; transition: 0.5s;">
+              <h2>Спасибо, что оставили заявку</h2>
+              <img src="img/tick.png" alt="">
+              <p>Мы свяжемся с вами в скором времени</p>
+            </div>
+            <span>Оставляя заявку вы соглашаетесь с обработкой персональных данных</span>
+        </div>
+    </div>
+
+    <main>
+      <section name="about" class="services-section" id="napravleniya">
+          <div id="base" class="products__wrapper">
+              <div class="ls">
+                  <h2>Направления деятельности</h2>
+                  <p>Много всего мы можем вам доставить и установить, звоните скорей, чё сколько ждать, друзья, мы вас очень ждём</p>
+                  <div class="container__products-items">
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/snezhinka.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                              <div class="slider">
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/hleb.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                              <div class="slider">
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/teplo.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                              <div class="slider">
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/vilki.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                              <div class="slider">
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/myaso.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                              <div class="slider">
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                      <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+                      <div class="figure" data-fancybox data-src="#pm1">
+                          <div class="figure__icons">
+                              <img src="img/condition.png">
+                          </div>
+                          <div class="figure__text__main">
+                          <dt class="figure__strong">
+                              Холодильное оборудование
+                          </dt>
+                          <dd class="figure__regular">
+                              Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто
+                          </dd>
+                          </div>
+                      </div>
+                      <div class="products_modal" id="pm1">
+                          <h2>Холодильное оборудование</h2>
+                          <div class="modal-imgs__container">
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                              <div class="products_item">
+                                  <a href="img/item.jpg" data-fancybox="images">
+                                      <img src="img/item.jpg">
+                                  </a>
+                                  <p>Описание здесь</p>
+                              </div>
+                          </div>
+                          <div class="sliderr" id="carousel">
+                            <div class="slider">
+                                <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                                <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                                <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                                <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                            </div>
+                      </div>
+                          <div class="route-to-form-button" data-fancybox data-src="#m">
+                              <p>Оставить заявку</p>
+                          </div>
+                      </div>
+
+
+
+                  </div>
+              </div>
+
+          </div>
+      </section>
+        <section id="about" class="about__container" >
+            <div class="l">
+                <h2>Технические Решения</h2>
+                <p class="closedDesc" id="closedDesc" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta.</p>
+                <p class="openDesc" id="pageText"  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta</p>
+                <!-- <p class="openDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta</p> -->
+                <p class="active">ПОДРОБНЕЕ</p>
+                <p class="close">НАЗАД</p>
+            </div>
+           
+            </section>
+        <section id="advantages" name="preim">
+                
+            <div class="l">
+                <div class="advantages__wrapper">
+                        <h2>Почему мы?</h2>
+                        <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci cupiditate deleniti esse exercitationem hic illo maxime nihil nisi officia officiis quam, quia quidem ratione rem reprehenderit sint soluta vitae!</p>
+
+                        <div class="advantages__container">
+                            <div class="figure"><div class="figure__icons"><img src="img/kachestvo.png" ></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Качество </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                            <div class="figure"><div class="figure__icons"><img src="img/garantii.png"></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Гарантии </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                            <div class="figure"><div class="figure__icons"><img src="img/podhod.png" ></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Индивидуальный подход </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                            <div class="figure"><div class="figure__icons"><img src="img/service.png" ></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Обслуживание </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                            <div class="figure"><div class="figure__icons"><img src="img/sklad1.png" ></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Склад запчастей </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                            <div class="figure"><div class="figure__icons"><img src="img/price1.png" ></div>
+                                <div class="figure__text">
+                                    <dt class="figure__strong"> Гибкие цены </dt>
+                                    <dd class="figure__regular">Оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="how-work">
+            <div>
+                <h2>Как мы работаем?</h2>
+                <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci cupiditate deleniti esse exercitationem hic illo maxime nihil nisi officia officiis quam, quia quidem ratione rem reprehenderit sint soluta vitae!</p>
+                <div class="icons__wrapper">
+                    <div class="icons__item__wrapper">
+                        <img src="img/mail.png" alt="">
+                        <h3>Заявка</h3>
+                        <p>оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто</p>
+                    </div>
+                    <div class="tichki"><img src="img/tochki.jpg"></div>
+                    <div class="icons__item__wrapper">
+                        <img src="img/call.png" alt="">
+                        <h3>Обработка</h3>
+                        <p>оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто</p>
+                    </div>
+                    <div class="tichki"><img src="img/tochki.jpg"></div>
+                    <div class="icons__item__wrapper">
+                        <img src="img/doc.png" alt="">
+                        <h3>Договор/Счет</h3>
+                        <p>оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто</p>
+                    </div>
+                    <div class="tichki"><img src="img/tochki.jpg"></div>
+                    <div class="icons__item__wrapper">
+                        <img src="img/auto.png" alt="">
+                        <h3>Доставка/Монтаж</h3>
+                        <p>оборудование которое очень нужно вам нажмите сюда обязательно и модалка откроется, круто</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Partners" name="partners">
+          <div class="ls">
+                <h2>Наши партнёры</h2>
+                <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci cupiditate deleniti esse exercitationem hic illo maxime nihil nisi officia officiis quam, quia quidem ratione rem reprehenderit sint soluta vitae!</p>
+                <div class="sliderr" id="carousel">
+                        <div class="slider">
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/ttwitter.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/facebook.png"  alt="#"></a></div></div>
+                              <div class="partner_item"><div class="partner_item__pic"><a href="#"><img src="img/linkedin.png"  alt="#"></a></div></div>
+                        </div>
+                </div>
+          </div>
+        </section>
+        <section id="footer2">
+                <video loop autoplay muted src="img/gears.mp4" class="contact__video"></video>
+            <div class="footer__wrapper">
+                    
+                <div class="info_contacts">
+                    <div class="contacts_links_container">
+                        <h2>Контакты</h2>
+                        <p class="psub">ООО "ТЕХНИЧЕСКИЕ РЕШЕНИЯ"</p>
+                        <div class="contacts_icons__wrapper">
+                            <div><img src="img/baseline-local_phone-24px.svg" alt=""><span>8(8332) 77-27-90</span></div>
+                            <div><img src="img/baseline-phone_iphone-24px.svg" alt=""><span>+7(912) 700-38-54</span></div>
+                            <div><img src="img/baseline-contact_phone-24px.svg" alt=""><span>Viber, WhatsApp: +7(953) 684-97-09</span></div>
+                            <div><img src="img/baseline-mail_outline-24px.svg" alt="почта"><span>tech.reshenya@yandex.ru</span></div>
+                        </div>
+                        <div class="map_button">
+                            Открыть карту
+                        </div>
+                    </div>
+                </div>
+                <div class="modal display" >
+                    <div class="modal__container">
+                        <form class="form" >
+                            <h2>Обратная связь</h2>
+                            <p>Введите cвои данные и мы Вам перезвоним!</p>
+                            <input name="name" placeholder="Ваше Имя">
+                            <input name="email" placeholder="Email">
+                            <input name="phone" placeholder="Номер телефона">
+                            <input type="submit" value="Оставить заявку" class="submit">
+                        </form>
+                        <div class="response__ajax" style="display: none">
+                          <h2> Спасибо, что оставили заявку</h2>
+                          <img src="img/tick.png" alt="">
+                          <p> Мы свяжемся с вами в скором времени</p>
+                        </div>
+                        <span>Оставляя заявку вы соглашаетесь с обработкой персональных данных</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer_container">
+                <div>
+                        <img src="logo.png" alt="технические решения">
+                </div>
+                <div class="footer-routs_wrapper">
+                    <p><a href="#top">Главная</a></p>
+                    <p><a href="#napravleniya">О Компании</a></p>
+                    <p><a href="#advantages">Наш Сервис</a></p>
+                    <p><a href="#Partners">Партнёры</a></p>
+                </div>
+                <div>
+                    Разработка сайта: <a href="#">TEIWAZ</a>
+                </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAykT7ZCLpjl_5XaQKkVvVs8GQCSFyp710&callback=initMap">
+    </script>
+</body>
+</html>

@@ -47,6 +47,10 @@ dt {
     margin: 0 auto;
 }
 
+a.call_item {
+    color:#f0f0f0;
+    cursor: pointer;
+}
 /*modal styles*/
 .modal{
     display: none;
@@ -453,7 +457,7 @@ h1{
     width: 100%;
     height: 100%;
     z-index: 5;
-    background: #f0f0f0;
+    background: linear-gradient(#f0f0f000, #f0f0f0);
 }
 #about:before {
     content: '';
@@ -1115,9 +1119,8 @@ img.next.slick-arrow:hover {
 @media (max-width: 768px){
     .mobile-logo{
         display: block;
-        height: 9%;
-        margin-top: 20%;
-        margin-bottom: 25%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .header__nav .header__nav-block:nth-of-type(2) {
         width: 50%;
@@ -1455,11 +1458,11 @@ img.next.slick-arrow:hover {
       width: 92%;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 425px){
     .mobile-logo{
-        height: 11%;
-        margin-top: 13%;
-        margin-bottom: 20%;
+        height: 15%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     .header__main{
         height: 75vh;
@@ -1542,8 +1545,12 @@ img.next.slick-arrow:hover {
     .header__divider {
         height: 0.1vh;
     }
+    #about{
+        height: 450px;
+    }
     .about__container h2 {
         font-size: 23px;
+        padding-top: 20px;
     }
     .about__container h2::after {
             bottom: -40%;

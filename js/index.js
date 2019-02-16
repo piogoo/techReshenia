@@ -120,11 +120,14 @@ $('.menu-btn').on('click', function(e){
 
 $(".active").on('click',function (e) {
   $('#about').addClass('changed changedd');
-  $('.active').css({"display":"none"});
+    $('.active').css({"display":"none"});
   $('.close').css({"display":"block"});
  /* $('.desc').html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda deleniti est eum exercitationem repellendus tempore veniam! Accusantium ad beatae consequatur, consequuntur dicta dolorem facilis, fugit harum pariatur possimus soluta.");*/
  $('.closedDesc').css({"display":"none"});
  $('.openDesc').css({"display":"block","width":"60%"});
+ if (window.matchMedia('(max-width: 425px)').matches) {
+  $('#about').css({"height":"100%"});
+ }
 });
 
 $(".close").on('click',function (e) {
@@ -133,6 +136,9 @@ $(".close").on('click',function (e) {
   $('.active').css({"display":"block"});
   $('.openDesc').css({"display":"none"});
   $('.closedDesc').css({"display":"block"});
+  if (window.matchMedia('(max-width: 425px)').matches){
+    $('#about').css({"height":"450px"});
+  }
 
 });
 
